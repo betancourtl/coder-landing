@@ -16,7 +16,6 @@ h1, h2, h3, h4, h5, h6, p, pre, input, label, select, button {
 h1, h2, h3, h4, h5, h6, p, pre, input, label {
   margin: 0;
   padding: 0;
-  color: $dark-grey;
 }
 
 h1, h2, h3, h5, h6 {
@@ -57,6 +56,6 @@ h6, .h6 {
 p, .p,
 li {
   margin-bottom: 1rem;
-  @include fontSize(13, 4);
+  @include fontSize(14, 4);
 }
 

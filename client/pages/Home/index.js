@@ -17,11 +17,9 @@ const Home = props => {
         <div className="twinkling">
           <div className="app-bg">
             <Header />
-            <div className="section-wrapper-bg-1">
-              <Section1 />
-              <Section2 />
-              <Section3 />
-            </div>
+            <Section1 />
+            <Section2 />
+            <Section3 />
             <Section4 />
             <Section5 />
             <Section6 />

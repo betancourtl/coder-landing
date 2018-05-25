@@ -1,6 +1,3 @@
-@import "../theme/colors";
-@import "../utils/mixins";
-
 .trial-form {
   background: $color-11;
   padding: 6rem;
@@ -25,15 +22,16 @@
 }
 
 .form-input.form-input {
-  @include fontSize(16, 2);
+  @include fontSize(14, 2);
   color: #fff;
   padding: 2rem;
   border-radius: 25px;
-  background-color: #252e55;
+  background-color: #21294c;
   border: none;
 
   &::placeholder {
     color: #536284;
+    font-size: 14px;
   }
 }
 
