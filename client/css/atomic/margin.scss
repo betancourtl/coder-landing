@@ -1,0 +1,5 @@
+@import "../utils/mixins";
+@include createMargin(1, 1);
+@include createMargin(2, 2);
+@include createMargin(3, 3);
+@include createMargin(4, 4);

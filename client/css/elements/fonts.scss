@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
+@import "../variables";
+
+// h1 54px bold
+// h2 40px bold
+// h3 36px bold
+// h4 20px bold
+// h5 17px bold
+// h6 15px bold
+// p 13px regular
+
+h1, h2, h3, h4, h5, h6, p, pre, input, label, select, button {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6, p, pre, input, label {
+  margin: 0;
+  padding: 0;
+  color: $dark-grey;
+}
+
+h1, h2, h3, h5, h6 {
+  font-weight: bold;
+}
+
+h1, .h1 {
+  margin-bottom: 2rem;
+  @include fontSize(54, 8);
+}
+
+h2, .h2 {
+  margin-bottom: 1rem;
+  @include fontSize(40, 6);
+}
+
+h3, .h3 {
+  margin-bottom: 1rem;
+  @include fontSize(36, 4);
+}
+
+h4, .h4 {
+  margin-bottom: 1rem;
+  font-weight: normal;
+  @include fontSize(20, 4);
+}
+
+h5, .h5 {
+  margin-bottom: 1rem;
+  @include fontSize(17, 3);
+}
+
+h6, .h6 {
+  margin-bottom: 1rem;
+  @include fontSize(15, 3);
+}
+
+p, .p,
+li {
+  margin-bottom: 1rem;
+  @include fontSize(13, 4);
+}
+

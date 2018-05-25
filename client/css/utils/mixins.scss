@@ -1,0 +1,100 @@
+@import "../variables";
+
+@mixin no-outline() {
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin fontSize($fontSize, $rem) {
+  font-size: $fontSize * 1px;
+  line-height: (($rem * $base) / $fontSize);
+}
+
+// Makes a color and primary color
+@mixin makeColor($name, $number) {
+  .#{name}-color-#{number} {
+    color: $name;
+  }
+
+  .#{name}-bg-#{number} {
+    background-color: $name;
+  }
+}
+
+// Margin and Padding
+@mixin createPadding($size, $multiplier) {
+  .pad-top-#{$size} {
+    padding-top: $multiplier * 1rem;
+  }
+
+  .pad-right-#{$size} {
+    padding-right: $multiplier * 1rem;
+  }
+
+  .pad-bottom-#{$size} {
+    padding-bottom: $multiplier * 1rem;
+  }
+
+  .pad-left-#{$size} {
+    padding-left: $multiplier * 1rem;
+  }
+
+  .pad-#{$size} {
+    padding: $multiplier * 1rem;
+  }
+}
+
+@mixin createMargin($size, $multiplier) {
+  .margin-top-#{$size} {
+    margin-top: $multiplier * 1rem;
+  }
+
+  .margin-right-#{$size} {
+    margin-right: $multiplier * 1rem;
+  }
+
+  .margin-bottom-#{$size} {
+    margin-bottom: $multiplier * 1rem;
+  }
+
+  .margin-left-#{$size} {
+    margin-left: $multiplier * 1rem;
+  }
+
+  .margin-#{$size} {
+    margin: $multiplier * 1rem;
+  }
+}
+
+// Breakpoints
+@mixin xs-mq {
+  @media only screen and (max-width: $sm-mq * 1px) {
+    @content
+  }
+}
+
+@mixin sm-mq {
+  @media only screen and (min-width: $sm-mq * 1px) and (max-width: $md-mq * 1px) {
+    @content
+  }
+}
+
+@mixin md-mq {
+  @media only screen and (min-width: $md-mq * 1px) and (max-width: $lg-mq * 1px) {
+    @content
+  }
+}
+
+@mixin lg-mq {
+  @media only screen and (min-width: $lg-mq * 1px) {
+    @content
+  }
+}
+
+@mixin text-gradient($gradient) {
+  background-image: $gradient;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

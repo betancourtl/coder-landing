@@ -1,0 +1,31 @@
+@import "../utils/mixins";
+
+.footer {
+  background-color: $color-12;
+  padding: 4rem 0;
+}
+
+.footer-links {
+  margin: 0;
+  padding: 0;
+  color: $color-9;
+  li {
+    @include fontSize(16, 2);
+    display: inline-block;
+    margin-right: 4rem;
+  }
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: flex-end;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  li {
+    @include fontSize(24, 3);
+    color: #fff;
+    display: inline-block;
+    margin-left: 4rem;
+  }
+}

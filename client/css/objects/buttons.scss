@@ -1,0 +1,25 @@
+@import "../theme/colors";
+
+button {
+  &.success {
+    border: none;
+    background-color: $success;
+    color: #fff;
+  }
+  &.info {
+    border: none;
+    background-color: $info;
+    color: #fff;
+  }
+  &.warning {
+    border: none;
+    background-color: $warning;
+    color: #fff;
+  }
+  &.danger {
+    border: none;
+    background-color: $danger;
+    color: #fff;
+  }
+}
+

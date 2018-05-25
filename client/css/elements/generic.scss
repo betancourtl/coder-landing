@@ -1,0 +1,19 @@
+@import "../variables";
+@import "../utils/mixins";
+@import "../theme/colors";
+
+* {
+  @include no-outline();
+}
+
+html {
+  font-size: $base * 1px;
+}
+
+body {
+  background-color: $color-1;
+}
+
+html, body {
+  margin: 0;
+}

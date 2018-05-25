@@ -1,0 +1,38 @@
+@import "../utils/mixins";
+@import "../theme/colors";
+
+button {
+  min-width: 150px;
+  padding: 2.5rem 3rem;
+  border-radius: 4rem;
+  border: none;
+  @include fontSize(15, 2);
+  @include no-outline();
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-1 {
+  background-image: $gradient1;
+  color: $white;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn-2 {
+  background-image: $gradient2;
+  color: $white;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.btn-3 {
+  background-image: $gradient3;
+  color: $white;
+  &:hover {
+    opacity: 0.9;
+  }
+}

@@ -1,0 +1,42 @@
+@import "../theme/colors";
+@import "../utils/mixins";
+
+.trial-form {
+  background: $color-11;
+  padding: 6rem;
+  border-radius: 15px;
+  max-width: 400px;
+}
+
+.trial-form-title {
+  @include fontSize(20, 3);
+  margin-bottom: 5rem;
+}
+
+.form-label {
+  @include fontSize(13, 2);
+  color: $color-9;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.form-control {
+  margin-bottom: 4rem;
+}
+
+.form-input.form-input {
+  @include fontSize(16, 2);
+  color: #fff;
+  padding: 2rem;
+  border-radius: 25px;
+  background-color: #252e55;
+  border: none;
+
+  &::placeholder {
+    color: #536284;
+  }
+}
+
+.trial-btn {
+  margin-top: 4rem;
+}

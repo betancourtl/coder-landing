@@ -1,0 +1,5 @@
+@import "../utils/mixins";
+@include createPadding(1, 1);
+@include createPadding(2, 2);
+@include createPadding(3, 3);
+@include createPadding(4, 4);

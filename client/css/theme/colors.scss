@@ -1,0 +1,48 @@
+@import "../utils/mixins";
+
+$white: #fff;
+$black: #222;
+
+$dark-grey: #3d3d3f;
+$light-grey: #6c6d70;
+$lighter-grey: #cdcfd5;
+
+$color-1: #261e3b;
+$color-2: #0e2154;
+$color-3: #1c47b4;
+$color-4: #0e5367;
+$color-5: #23b3c0;
+$color-6: #a96575;
+$color-7: #eccfdb;
+$color-8: #3b484f;
+$color-9: #afc3df;
+$color-10: #4f76ff;
+$color-11: #2a3565;
+$color-12: #274177;
+
+// gradients
+$gradient1: linear-gradient(to right, #2b89fb, #08f5e8);
+$gradient2: linear-gradient(to right, #ff4c92, #fd9570);
+$gradient3: linear-gradient(to right, #9574fa, #f972b2);
+$gradient4: linear-gradient(to right, $color-10, #02e5d0);
+
+$info: #2678d1;
+$success: #47b226;
+$danger: #d11838;
+$warning: #d1652e;
+
+h1, h2, h3, h5, h6 {
+  color: $white;
+}
+
+p, h4 {
+  color: #a4b7d3;
+}
+
+.text-gradient-1 {
+  @include text-gradient($gradient1);
+}
+
+.text-gradient-2 {
+  @include text-gradient($gradient2);
+}
