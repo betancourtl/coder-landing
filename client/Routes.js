@@ -9,10 +9,11 @@ import NotFound from './pages/Auth/NotFound';
 
 class Routes extends Component {
   render() {
+    const isProd = process.env.NODE_ENV === 'production';
     return (
       <App>
         <Switch>
-          <Route path="/" component={Home} />
+          <Route path={isProd ? '/coder-landing' : '/'} component={Home} />
           <Route component={NotFound} />
         </Switch>
       </App>

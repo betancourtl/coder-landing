@@ -1,35 +1,10 @@
 const express = require('express');
-const bodyParser = require('body-parser');
-const mysql = require('mysql');
-const routes = require('./http/routes');
-const mysqlConfig = require('./config/mysql');
-const appErrorMiddleware = require('./http/middleware/appError');
 const {
   DIST_DIR,
   DIST_DIR_INDEX_FILE,
 } = require('../config/constants');
 
-// start mysql connection
-if (process.env.NODE_ENV !== 'test') {
-  const connection = (mysql.createConnection(mysqlConfig));
-
-  connection.connect((err) => {
-    if (err) throw err;
-    console.log('Connected! to MySQL database');
-  });
-}
-
 const app = express();
-
-// middleware
-app.use(bodyParser.json({ limit: '5mb' }));
-
-// Routes
-// Do not catch errors in here. Let the middleware take care of it.
-routes(app);
-
-// Error handling middleware
-appErrorMiddleware(app);
 
 // Development
 if (process.env.NODE_ENV === 'development') {
